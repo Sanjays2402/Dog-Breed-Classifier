@@ -1,21 +1,57 @@
-# Udacity Deep learning Nanodegree Program
+# 🐕 Dog Breed Classifier
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat&logo=pytorch&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 
-## Project 2: Dog Breed Classification in PyTorch
+A deep learning pipeline that identifies dog breeds from images. Given a dog photo, the algorithm estimates the breed. Given a human photo, it identifies the most resembling dog breed. Part of the **Udacity Deep Learning Nanodegree** program.
 
-Build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, the algorithm will identify an estimate of the canine's breed.  If supplied an image of a human, the code will identify the resembling dog breed.
+## 📖 About
 
-Udacity's original repo is [here](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/project-dog-classification)
+Build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images. Given an image of a dog, the algorithm will identify an estimate of the canine's breed. If supplied an image of a human, the code will identify the resembling dog breed.
 
+Udacity's original repo is [here](https://github.com/udacity/deep-learning-v2-pytorch/tree/master/project-dog-classification).
 
-## Import Datasets
+## 📊 Results
 
-* Download the [dog dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip).  
-* Download the [human dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz).
+| Model | Test Accuracy |
+|-------|:------------:|
+| **CNN from Scratch** | 15% |
+| **Pre-trained ResNet-50** | **81%** |
 
+## ✨ Features
 
-### Note:
+- 🧠 **Custom CNN** — Built from scratch for baseline comparison
+- 🔄 **Transfer Learning** — Pre-trained ResNet-50 for high accuracy
+- 👤 **Human Detection** — Uses Haar cascades to detect human faces
+- 🐶 **Breed Identification** — Classifies among 133 dog breeds
 
-* The CNN model developed from scratch achieves a test accuracy of 15%.
+## 📦 Datasets
 
-* A [pre-trained ResNet-50 model](http://pytorch.org/docs/master/torchvision/models.html#id3) used to classify dog breeds achieves very high test accuracy of 81%.
+- [Dog Dataset](https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip)
+- [Human Dataset](http://vis-www.cs.umass.edu/lfw/lfw.tgz)
+
+## 🚀 Getting Started
+
+```bash
+pip install torch torchvision opencv-python numpy
+```
+
+Open `dog_app.ipynb` in Jupyter Notebook.
+
+## 📁 Project Structure
+
+```
+├── dog_app.ipynb                          # Main notebook
+├── haarcascades/
+│   └── haarcascade_frontalface_alt.xml    # Face detection model
+└── images/                                # Sample images
+```
+
+## 👤 Author
+
+**Sanjay Santhanam**
+
+---
+
+⭐ Star this repo if you found it useful!
